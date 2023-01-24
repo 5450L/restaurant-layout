@@ -1,0 +1,19 @@
+.button {
+  padding: 8px 16px;
+  background-color: #b59571;
+  max-height: 40px;
+  max-width: 145px;
+
+  text-align: center;
+
+  font-weight: 700;
+  color: white;
+  line-height: 140%;
+  transition: all 0.7s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #d8ab78;
+  color: #faf3ec;
+}

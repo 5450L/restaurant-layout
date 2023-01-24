@@ -1,0 +1,58 @@
+footer {
+  padding: 34px 20% 39px 20%;
+  height: 120px;
+  background-color: #333333;
+
+  font-size: 16px;
+  color: white;
+}
+@media (max-width: 1120px) {
+  footer {
+    padding: 34px 10% 39px 10%;
+  }
+}
+@media (max-width: 530px) {
+  footer {
+    padding: 34px 5px 39px 5px;
+  }
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.policy {
+  padding-right: 10px;
+}
+
+.payments {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+}
+@media (max-width: 420px) {
+  .payments {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+.payments img {
+  height: 40px;
+  width: 40px;
+  max-height: 26px;
+  min-width: 27px;
+}
+@media (max-width: 420px) {
+  .payments img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.masterCard {
+  object-fit: cover;
+}

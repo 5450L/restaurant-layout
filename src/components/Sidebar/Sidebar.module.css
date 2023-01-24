@@ -1,0 +1,72 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding: 35px 0;
+
+  width: 120px;
+  height: 100vh;
+  background-color: #333333;
+}
+
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.sidebarHeader {
+  align-items: center;
+}
+
+.burger {
+  display: block;
+  position: relative;
+  height: 24px;
+  width: 34px;
+  margin: 29px auto;
+}
+.burger span {
+  background-color: #b59571;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 10px;
+  border-radius: 70px;
+}
+.burger:before,
+.burger:after {
+  content: "";
+  background-color: #b59571;
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  left: 0;
+  border-radius: 70px;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  width: 70%;
+  bottom: 0;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+.icons svg {
+  width: 35px;
+  height: 20px;
+}
+.icons svg:hover {
+  cursor: pointer;
+  fill: #f2ddc5;
+}
