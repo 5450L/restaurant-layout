@@ -1,0 +1,72 @@
+.bookForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 200px auto;
+  height: 572px;
+  width: 416px;
+  background-color: #333333;
+  padding: 60px 60px 70px 60px;
+
+  font-family: Circe;
+
+  text-align: center;
+  color: white;
+}
+
+.crossButton {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.crossButton svg {
+  transition: all 0.7s;
+}
+.crossButton svg:hover {
+  cursor: pointer;
+  fill: #f2ddc5;
+}
+
+.logo {
+  width: 73px;
+  margin: 0 auto;
+}
+
+.bookForm h2 {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 216px;
+}
+.inputField input {
+  width: 296px;
+  height: 52px;
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.inputField input::placeholder {
+  color: white;
+}
+
+.horizontalInputField {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.horizontalInputField input {
+  width: 136px;
+}
+
+.formButton {
+  margin: 0 auto;
+  align-content: center;
+}

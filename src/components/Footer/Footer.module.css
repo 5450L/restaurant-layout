@@ -22,10 +22,16 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 0 20px;
+}
+@media (max-width: 530px) {
+  .footerContainer {
+    margin: 0 15px;
+  }
 }
 
 .policy {
-  padding-right: 10px;
+  padding: 0 10px;
 }
 
 .payments {
