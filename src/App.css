@@ -11,4 +11,6 @@
 
 .App {
   min-height: 100vh;
+  font-family: "Circe";
+  color: #333333;
 }

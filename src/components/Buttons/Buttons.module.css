@@ -12,6 +12,11 @@
   line-height: 140%;
   transition: all 0.7s;
 }
+@media (max-width: 520px) {
+  .button {
+    margin-bottom: 10px;
+  }
+}
 
 .button:hover {
   cursor: pointer;

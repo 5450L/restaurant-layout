@@ -1,0 +1,132 @@
+.contactsContent {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  align-items: center;
+}
+
+@media (max-width: 1274px) {
+  .contactsContent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.arriveBlockList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 416px;
+}
+@media (max-width: 480px) {
+  .arriveBlockList {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.arriveBlock {
+  width: 196px;
+  height: 133px;
+}
+.arriveTime {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  color: #b59571;
+  font-weight: 700;
+}
+.arriveTime h2 {
+  height: 77px;
+  font-size: 64px;
+}
+.arriveTime span {
+  margin-left: 15px;
+  font-size: 32px;
+}
+.arriveBlock p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contactCard {
+  position: relative;
+  min-width: 856px;
+  height: 450px;
+  margin-left: 24px;
+  z-index: 0;
+}
+@media (max-width: 1274px) {
+  .contactCard {
+    background: url("/public/images/mapContacts.png");
+    height: 400px;
+  }
+}
+
+.contactCardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 55px;
+  width: 416px;
+  height: 349px;
+  z-index: 1;
+
+  padding: 40px;
+
+  background-color: #5b5b5b;
+  color: white;
+}
+@media (max-width: 1274px) {
+  .contactCardInfo {
+    top: 10%;
+    left: 25%;
+  }
+}
+@media (max-width: 480px) {
+  .contactCardInfo {
+    left: 32%;
+    width: 280px;
+  }
+}
+
+.contactCardInfo ul {
+  margin: 0;
+  padding: 0;
+}
+.contactCardInfo ul li {
+  margin-bottom: 15px;
+}
+.contactCardInfo ul li svg {
+  margin-right: 18px;
+}
+@media (max-width: 480px) {
+  .contactCardInfo ul li svg {
+    margin-right: 8px;
+  }
+}
+.cardInfoButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  .cardInfoButtons {
+    flex-direction: column;
+    height: 400px;
+  }
+}
+
+.map {
+  margin-left: 110px;
+  min-width: 746px;
+  height: 450px;
+  background: url("/public/images/mapContacts.png");
+  z-index: 0;
+}
+@media (max-width: 1274px) {
+  .map {
+    display: none;
+  }
+}

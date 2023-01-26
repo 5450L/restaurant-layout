@@ -1,0 +1,18 @@
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 202px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.strip {
+  width: 60px;
+  height: 3px;
+  background-color: #b59571;
+}
