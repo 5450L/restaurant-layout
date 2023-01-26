@@ -14,3 +14,7 @@
   font-family: "Circe";
   color: #333333;
 }
+
+a {
+  text-decoration: none;
+}

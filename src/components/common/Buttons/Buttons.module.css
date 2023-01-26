@@ -1,9 +1,11 @@
 .button {
   margin: auto;
   padding: 8px 16px;
-  background-color: #b59571;
   max-height: 40px;
   max-width: 145px;
+
+  background-color: #b59571;
+  border: 1px solid #b59571;
 
   text-align: center;
 
@@ -22,4 +24,13 @@
   cursor: pointer;
   background-color: #d8ab78;
   color: #faf3ec;
+}
+
+.secondary {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.108);
 }

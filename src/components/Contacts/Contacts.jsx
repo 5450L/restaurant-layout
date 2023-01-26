@@ -1,10 +1,10 @@
 import React from "react";
-import BlockTitle from "../BlockTitle/BlockTitle";
+import BlockTitle from "../common/BlockTitle/BlockTitle";
 import contactsStyles from "./Contacts.module.css";
 
 import { phone, mapPoint } from "../common/Logo/icons";
 
-import Button from "../Buttons/Button";
+import Button from "../common/Buttons/Button";
 
 export default function Contacts() {
   return (
@@ -62,7 +62,7 @@ export default function Contacts() {
             </ul>
             <div className={contactsStyles.cardInfoButtons}>
               <Button text="Бронь столика" />
-              <Button text="Задать вопрос" />
+              <Button text="Задать вопрос" type="secondary" />
             </div>
           </div>
           <div className={contactsStyles.map}></div>

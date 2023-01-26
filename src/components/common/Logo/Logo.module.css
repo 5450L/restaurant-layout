@@ -1,5 +1,6 @@
 .logoContainer {
   position: relative;
+  display: inline;
   height: 46px;
 
   align-items: center;

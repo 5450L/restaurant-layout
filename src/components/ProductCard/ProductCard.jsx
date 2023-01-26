@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Buttons/Button";
+import Button from "../common/Buttons/Button";
 import productCardStyles from "./ProductCard.module.css";
 
 export default function ProductCard(props) {

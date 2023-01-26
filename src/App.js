@@ -7,10 +7,12 @@ import Footer from "./components/Footer/Footer";
 import Sidebar from "./components/Sidebar/Sidebar";
 import ProductCard from "./components/ProductCard/ProductCard";
 import Contacts from "./components/Contacts/Contacts";
+import Menu from "./components/Menu/Menu";
 
 function App() {
   return (
     <div className="App">
+      <Menu />
       <Contacts />
       {/* <BookForm /> */}
       {/* <ProductCard title="Яичница-глазунья из трех яиц" price="30" /> */}

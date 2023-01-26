@@ -3,7 +3,7 @@ import bookFormStyles from "./BookForm.module.css";
 
 import Logo from "../common/Logo/Logo";
 import { cross } from "../common/Logo/icons";
-import Button from "../Buttons/Button";
+import Button from "../common/Buttons/Button";
 
 export default function BookForm() {
   return (

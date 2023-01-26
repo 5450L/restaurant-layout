@@ -15,10 +15,6 @@ export default function Sidebar() {
           </div>
         </div>
         <div className={sidebarStyles.icons}>
-          {/* <img src={youtube} />
-          <img src={twitter} />
-          <img src={telegram} /> */}
-
           {youtube()}
           {twitter()}
           {telegram()}

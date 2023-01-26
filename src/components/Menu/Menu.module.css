@@ -1,0 +1,70 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #333;
+  color: white;
+
+  z-index: 1000;
+  text-align: center;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 200px;
+  margin: 30px auto 100px auto;
+}
+.logo {
+  width: 73px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.menuContent ul {
+  margin-top: 160px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 48px;
+}
+.menuContent ul li {
+  margin-bottom: 40px;
+}
+.menuContent ul li a {
+  color: white;
+  transition: all 0.7s;
+}
+.menuContent ul li a:hover {
+  color: rgba(255, 255, 255, 0.463);
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 158px;
+  margin: auto;
+  margin-top: 181px;
+}
+.icons svg {
+  width: 33px;
+  height: 20px;
+  transition: all 0.7s;
+}
+.icons svg:hover {
+  cursor: pointer;
+  fill: #f2ddc5;
+}
+
+.crossButton svg {
+  transition: all 0.7s;
+}
+.crossButton svg:hover {
+  cursor: pointer;
+  fill: #f2ddc5;
+}
