@@ -1,12 +1,12 @@
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 
   padding: 35px 0;
 
   width: 120px;
-  height: 100vh;
+  height: 1000px;
   background-color: #333333;
 }
 
@@ -29,6 +29,9 @@
   width: 34px;
   margin: 29px auto;
 }
+.burger:hover {
+  cursor: pointer;
+}
 .burger span {
   background-color: #b59571;
   position: absolute;
@@ -37,6 +40,7 @@
   left: 0;
   top: 10px;
   border-radius: 70px;
+  transition: all 0.7s;
 }
 .burger:before,
 .burger:after {
@@ -47,6 +51,7 @@
   height: 3px;
   left: 0;
   border-radius: 70px;
+  transition: all 0.7s;
 }
 .burger::before {
   top: 0;
@@ -54,6 +59,12 @@
 .burger::after {
   width: 70%;
   bottom: 0;
+}
+.burger span:hover,
+.burger:hover::before,
+.burger:hover::after {
+  cursor: pointer;
+  background-color: #f2ddc5;
 }
 
 .icons {
@@ -65,6 +76,7 @@
 .icons svg {
   width: 35px;
   height: 20px;
+  transition: all 0.7s;
 }
 .icons svg:hover {
   cursor: pointer;

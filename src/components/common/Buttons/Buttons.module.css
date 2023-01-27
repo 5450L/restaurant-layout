@@ -1,8 +1,6 @@
 .button {
   margin: auto;
   padding: 8px 16px;
-  max-height: 40px;
-  max-width: 145px;
 
   background-color: #b59571;
   border: 1px solid #b59571;
@@ -33,4 +31,15 @@
 }
 .secondary:hover {
   background-color: rgba(255, 255, 255, 0.108);
+}
+
+.secondaryDark {
+  color: #333;
+  background-color: transparent;
+  border-color: #33333321;
+}
+.secondaryDark:hover {
+  color: black;
+  background-color: transparent;
+  border-color: #333;
 }

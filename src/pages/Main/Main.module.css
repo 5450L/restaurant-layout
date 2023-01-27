@@ -1,0 +1,122 @@
+.mainPage {
+  width: 100%;
+}
+
+.topPart {
+  position: relative;
+  background: url(/public/images/bgImage.jpg);
+  /* background-repeat: no-repeat; */
+  min-height: 1000px;
+  max-height: 100vh;
+  min-width: 100%;
+}
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 42px;
+  top: 30px;
+  right: 100px;
+}
+.naviList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  color: white;
+  font-size: 20px;
+}
+.naviList li {
+  cursor: pointer;
+  margin-right: 50px;
+  transition: all 0.7s;
+}
+.naviList li:hover {
+  color: rgba(255, 255, 255, 0.463);
+}
+
+.infoPart {
+  max-width: 1274px;
+  margin: auto;
+}
+
+.infoBlock {
+  margin-top: 150px;
+}
+
+.infoBlockContent {
+  max-width: 856px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.infoBlockContent .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .infoBlockContent .text {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+}
+.infoBlockContent h2 {
+  align-self: flex-start;
+  line-height: 76px;
+  font-size: 64px;
+  font-weight: 700;
+  max-width: 200px;
+}
+.infoBlockContent p {
+  max-width: 526px;
+  font-size: 18px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+@media (max-width: 900px) {
+  .images {
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+.imgFrame {
+  width: 416px;
+  height: 240px;
+  border: 1px solid #33333321;
+}
+.imgFrame img {
+  margin: 40px auto 24px auto;
+  transition: all 0.7s;
+}
+.imgFrame img:hover {
+  margin-top: 10px;
+  box-shadow: 0 0 10px #33333321;
+}
+.imgTitle {
+  width: 100%;
+  font-size: 20px;
+  margin: 64px auto 0 auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  margin-top: 75px;
+}
+.button {
+  margin-right: 28px;
+}

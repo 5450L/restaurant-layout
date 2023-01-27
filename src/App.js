@@ -9,15 +9,16 @@ import ProductCard from "./components/ProductCard/ProductCard";
 import Contacts from "./components/Contacts/Contacts";
 import Menu from "./components/Menu/Menu";
 
+import Main from "./pages/Main/Main.jsx";
+
 function App() {
   return (
     <div className="App">
-      <Menu />
-      <Contacts />
-      {/* <BookForm /> */}
-      {/* <ProductCard title="Яичница-глазунья из трех яиц" price="30" /> */}
-      {/* <Sidebar /> */}
-      {/* <Footer /> */}
+      <Main />
+      <div className="contacts">
+        <Contacts />
+      </div>
+      <Footer />
     </div>
   );
 }

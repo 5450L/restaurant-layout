@@ -8,7 +8,7 @@ import Button from "../common/Buttons/Button";
 
 export default function Contacts() {
   return (
-    <div>
+    <div className={contactsStyles.contacts}>
       <BlockTitle title="Контакты" />
       <div className={contactsStyles.contactsContent}>
         <ul className={contactsStyles.arriveBlockList}>
