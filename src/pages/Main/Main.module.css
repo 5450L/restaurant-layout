@@ -5,7 +5,6 @@
 .topPart {
   position: relative;
   background: url(/public/images/bgImage.jpg);
-  /* background-repeat: no-repeat; */
   min-height: 1000px;
   max-height: 100vh;
   min-width: 100%;
@@ -38,7 +37,6 @@
 }
 
 .infoPart {
-  max-width: 1274px;
   margin: auto;
 }
 

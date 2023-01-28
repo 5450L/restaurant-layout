@@ -1,7 +1,7 @@
 import React from "react";
 import menuStyles from "./Menu.module.css";
 
-import { cross, youtube, twitter, telegram } from "../common/Logo/icons";
+import { cross, youtube, twitter, telegram } from "../../assets/icons/icons";
 
 import Logo from "../common/Logo/Logo";
 import Button from "../common/Buttons/Button";

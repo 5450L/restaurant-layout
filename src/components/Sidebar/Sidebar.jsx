@@ -2,7 +2,7 @@ import React from "react";
 import sidebarStyles from "./Sidebar.module.css";
 
 import Logo from "../common/Logo/Logo.jsx";
-import { telegram, twitter, youtube } from "../common/Logo/icons";
+import { telegram, twitter, youtube } from "../../assets/icons/icons";
 
 export default function Sidebar() {
   return (

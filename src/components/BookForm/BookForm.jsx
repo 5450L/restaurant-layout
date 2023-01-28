@@ -2,7 +2,7 @@ import React from "react";
 import bookFormStyles from "./BookForm.module.css";
 
 import Logo from "../common/Logo/Logo";
-import { cross } from "../common/Logo/icons";
+import { cross } from "../../assets/icons/icons";
 import Button from "../common/Buttons/Button";
 
 export default function BookForm() {

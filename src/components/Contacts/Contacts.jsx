@@ -2,7 +2,7 @@ import React from "react";
 import BlockTitle from "../common/BlockTitle/BlockTitle";
 import contactsStyles from "./Contacts.module.css";
 
-import { phone, mapPoint } from "../common/Logo/icons";
+import { phone, mapPoint } from "../../assets/icons/icons";
 
 import Button from "../common/Buttons/Button";
 

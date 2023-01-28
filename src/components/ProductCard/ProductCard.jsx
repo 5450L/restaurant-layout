@@ -7,11 +7,13 @@ export default function ProductCard(props) {
     <div className={productCardStyles.productCard}>
       <div className={productCardStyles.image}></div>
 
-      <h3 className={productCardStyles.title}>{props.title}</h3>
+      <h3 className={productCardStyles.title}>Глазунья из трех яиц</h3>
 
       <div className={productCardStyles.purchase}>
-        <h2>{props.price} UAH</h2>
-        <Button text="В корзину" />
+        <h2>123 ₴</h2>
+        <div className={productCardStyles.button}>
+          <Button text="В корзину" />
+        </div>
       </div>
     </div>
   );

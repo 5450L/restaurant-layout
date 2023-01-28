@@ -9,7 +9,7 @@ export default function Main() {
   return (
     <div className={mainStyles.mainPage}>
       <div className={mainStyles.topPart}>
-        <Sidebar />
+        {/* <Sidebar /> */}
         <div className={mainStyles.header}>
           <ul className={mainStyles.naviList}>
             <li>Меню</li>

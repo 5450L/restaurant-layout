@@ -10,11 +10,14 @@ import Contacts from "./components/Contacts/Contacts";
 import Menu from "./components/Menu/Menu";
 
 import Main from "./pages/Main/Main.jsx";
+import MenuPage from "./pages/MenuPage/MenuPage.jsx";
 
 function App() {
   return (
     <div className="App">
-      <Main />
+      <Sidebar />
+      <MenuPage />
+      {/* <Main /> */}
       <div className="contacts">
         <Contacts />
       </div>
