@@ -4,12 +4,15 @@ import bookFormStyles from "./BookForm.module.css";
 import Logo from "../common/Logo/Logo";
 import { cross } from "../../assets/icons/icons";
 import Button from "../common/Buttons/Button";
+import { NavLink } from "react-router-dom";
 
 export default function BookForm() {
   return (
     <div className={bookFormStyles.backdrop}>
       <form className={bookFormStyles.bookForm}>
-        <div className={bookFormStyles.crossButton}>{cross()}</div>
+        <NavLink to={"/"} className={bookFormStyles.crossButton}>
+          {cross()}
+        </NavLink>
 
         <div className={bookFormStyles.logo}>
           <Logo />

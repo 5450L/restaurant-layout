@@ -1,9 +1,11 @@
 import React from "react";
-import BlockTitle from "../common/BlockTitle/BlockTitle";
 import contactsStyles from "./Contacts.module.css";
+
+import { NavLink } from "react-router-dom";
 
 import { phone, mapPoint } from "../../assets/icons/icons";
 
+import BlockTitle from "../common/BlockTitle/BlockTitle";
 import Button from "../common/Buttons/Button";
 
 export default function Contacts() {
@@ -61,7 +63,9 @@ export default function Contacts() {
               </li>
             </ul>
             <div className={contactsStyles.cardInfoButtons}>
-              <Button text="Бронь столика" />
+              <NavLink to="/book-form">
+                <Button text="Бронь столика" />
+              </NavLink>
               <Button text="Задать вопрос" type="secondary" />
             </div>
           </div>

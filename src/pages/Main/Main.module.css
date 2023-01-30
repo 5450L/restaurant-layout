@@ -25,6 +25,7 @@
   align-items: center;
   position: relative;
   color: white;
+
   font-size: 20px;
 }
 .naviList li {
@@ -32,14 +33,18 @@
   margin-right: 50px;
   transition: all 0.7s;
 }
-.naviList li:hover {
+.naviList li a {
+  color: white;
+  transition: all 0.7s;
+}
+.naviList li a:hover {
   color: rgba(255, 255, 255, 0.463);
 }
 
 .infoPart {
   margin: auto;
+  width: 1076px;
 }
-
 .infoBlock {
   margin-top: 150px;
 }

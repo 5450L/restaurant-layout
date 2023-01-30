@@ -1,33 +1,45 @@
 import React from "react";
 import mainStyles from "./Main.module.css";
 
+import AOS from "aos";
+
 import Button from "../../components/common/Buttons/Button";
-import Sidebar from "../../components/Sidebar/Sidebar";
 import BlockTitle from "../../components/common/BlockTitle/BlockTitle";
 
+import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
+
 export default function Main() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className={mainStyles.mainPage}>
-      <div className={mainStyles.topPart}>
-        {/* <Sidebar /> */}
+      <section className={mainStyles.topPart}>
         <div className={mainStyles.header}>
           <ul className={mainStyles.naviList}>
-            <li>Меню</li>
-            <li>Доставка</li>
-            <li>Оплата</li>
+            <li>
+              <NavLink to="menu">Меню</NavLink>
+            </li>
+            <li>
+              <NavLink to="">Доставка</NavLink>
+            </li>
+            <li>
+              <NavLink to="">Оплата</NavLink>
+            </li>
           </ul>
 
-          <div className={mainStyles.button}>
+          <NavLink to="book-form" className={mainStyles.button}>
             <Button text="Бронь столика" />
-          </div>
+          </NavLink>
         </div>
-      </div>
+      </section>
 
-      <div className={mainStyles.infoPart}>
-        <div className={mainStyles.infoBlock}>
+      <section className={mainStyles.infoPart}>
+        <div className={mainStyles.infoBlock} data-aos="fade-right">
           <BlockTitle title="О ресторане" />
           <div className={mainStyles.infoBlockContent}>
-            <div class={mainStyles.text}>
+            <div className={mainStyles.text}>
               <h2>Food Exxe Relo</h2>
               <p>
                 Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. In
@@ -47,10 +59,10 @@ export default function Main() {
           </div>
         </div>
 
-        <div className={mainStyles.infoBlock}>
+        <div className={mainStyles.infoBlock} data-aos="fade-left">
           <BlockTitle title="Меню" />
           <div className={mainStyles.infoBlockContent}>
-            <div class={mainStyles.text}>
+            <div className={mainStyles.text}>
               <h2>Меню</h2>
               <p>
                 At faucibus nullam mauris vitae ut non. Augue libero non nibh
@@ -63,25 +75,15 @@ export default function Main() {
               </p>
             </div>
             <div className={mainStyles.images}>
-              <a
-                href=""
-                target="_blank"
-                rel="noreferrer"
-                className={mainStyles.imgBlock}
-              >
+              <NavLink to="/menu" className={mainStyles.imgBlock}>
                 <div className={mainStyles.imgFrame}>
                   <img src="images/menu.jpg" alt="menu" />
                 </div>
                 <div className={mainStyles.imgTitle}>
                   <BlockTitle title=" Основное Меню" />
                 </div>
-              </a>
-              <a
-                href=""
-                target="_blank"
-                rel="noreferrer"
-                className={mainStyles.imgBlock}
-              >
+              </NavLink>
+              <a href="" className={mainStyles.imgBlock}>
                 <div className={mainStyles.imgFrame}>
                   <img src="images/barCard.png" alt="barCard" />
                 </div>
@@ -93,22 +95,25 @@ export default function Main() {
           </div>
         </div>
 
-        <div className={mainStyles.infoBlock}>
+        <div className={mainStyles.infoBlock} data-aos="fade-right">
           <BlockTitle title="Доставка" />
           <div className={mainStyles.infoBlockContent}>
-            <div class={mainStyles.text}>
+            <div className={mainStyles.text}>
               <h2>Служба доставки</h2>
-              <p>
-                Phasellus diam, ultrices lobortis integer et. Diam, purus vel
-                sagittis, non, a. In risus, venenatis enim vitae mauris aliquet
-                orci. Consectetur nibh interdum nullam ut lobortis eu etiam sem.
-                Et in vitae pellentesque non, lectus orci natoque faucibus
-                suspendisse. Semper aliquam id et ultrices velit donec lacus. In
-                odio sit nibh volutpat cras placerat sit feugiat dignissim.
-                Rutrum et suspendisse tortor, lobortis eleifend in fringilla.
-                Egestas cursus imperdiet cursus dui, nulla id massa. Hendrerit
-                nam enim semper porttitor imperdiet diam semper. Nulla sit etiam
-                cras morbi enim elementum euismod sapien.
+              <div>
+                <p>
+                  Phasellus diam, ultrices lobortis integer et. Diam, purus vel
+                  sagittis, non, a. In risus, venenatis enim vitae mauris
+                  aliquet orci. Consectetur nibh interdum nullam ut lobortis eu
+                  etiam sem. Et in vitae pellentesque non, lectus orci natoque
+                  faucibus suspendisse. Semper aliquam id et ultrices velit
+                  donec lacus. In odio sit nibh volutpat cras placerat sit
+                  feugiat dignissim. Rutrum et suspendisse tortor, lobortis
+                  eleifend in fringilla. Egestas cursus imperdiet cursus dui,
+                  nulla id massa. Hendrerit nam enim semper porttitor imperdiet
+                  diam semper. Nulla sit etiam cras morbi enim elementum euismod
+                  sapien.
+                </p>
                 <div className={mainStyles.buttons}>
                   <div className={mainStyles.button}>
                     <Button text="Подробнее" />
@@ -117,11 +122,11 @@ export default function Main() {
                     <Button text="Условия доставки" type="secondaryDark" />
                   </div>
                 </div>
-              </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
