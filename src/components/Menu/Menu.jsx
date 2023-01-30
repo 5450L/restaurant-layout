@@ -6,15 +6,22 @@ import { cross, youtube, twitter, telegram } from "../../assets/icons/icons";
 import Logo from "../common/Logo/Logo";
 import Button from "../common/Buttons/Button";
 
-export default function Menu() {
+export default function Menu(props) {
   return (
-    <div className={menuStyles.menu}>
+    <div
+      className={`${menuStyles.menu} ${!props.isOpened && menuStyles.isClosed}`}
+    >
       <div className={menuStyles.menuContent}>
         <div className={menuStyles.menuHead}>
           <div className={menuStyles.logo}>
             <Logo />
           </div>
-          <div className={menuStyles.crossButton}>{cross()}</div>
+          <div
+            className={menuStyles.crossButton}
+            onClick={() => props.toggleIsOpened(false)}
+          >
+            {cross()}
+          </div>
         </div>
 
         <div className={menuStyles.menuMain}>

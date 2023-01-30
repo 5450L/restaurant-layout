@@ -32,7 +32,8 @@
   color: black;
 }
 
-.menuItemList {
+.menuPageContent {
+  margin: auto;
   margin-top: 53px;
 }
 .menuItemList ul {

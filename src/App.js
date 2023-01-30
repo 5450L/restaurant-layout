@@ -17,7 +17,9 @@ function App() {
     <div className="App">
       <Sidebar />
       <MenuPage />
+      {/* <BookForm /> */}
       {/* <Main /> */}
+
       <div className="contacts">
         <Contacts />
       </div>

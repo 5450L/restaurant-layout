@@ -8,7 +8,7 @@ export default function Button(props) {
         props.type === "secondary" ? buttonStyles.secondary : ""
       } ${props.type === "secondaryDark" ? buttonStyles.secondaryDark : ""}`}
     >
-      {props.text}
+      <p>{props.text}</p>
     </div>
   );
 }

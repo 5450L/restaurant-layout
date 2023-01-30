@@ -3,6 +3,7 @@ import menuPageStyles from "./MenuPage.module.css";
 
 import ProductCard from "../../components/ProductCard/ProductCard";
 import ProfileHeader from "../../components/ProfileHeader/ProfileHeader";
+import BookDetails from "../BookDetails/BookDetails";
 
 export default function MenuPage() {
   return (
@@ -25,7 +26,10 @@ export default function MenuPage() {
         <li>Гарниры</li>
       </ul>
 
-      <div className={menuPageStyles.menuItemList}>
+      <div className={menuPageStyles.menuPageContent}>
+        <BookDetails />
+
+        {/* <div className={menuPageStyles.menuItemList}>
         <ul>
           <li>
             <ProductCard />
@@ -64,6 +68,7 @@ export default function MenuPage() {
             <ProductCard />
           </li>
         </ul>
+      </div> */}
       </div>
     </div>
   );

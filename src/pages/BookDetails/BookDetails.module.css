@@ -1,0 +1,102 @@
+.bookDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 134px;
+}
+
+.imageBlock {
+  width: 416px;
+  height: 434px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.imageBlock img {
+  height: 93px;
+  width: 122px;
+}
+.big {
+  width: 100% !important;
+  height: 317px !important;
+}
+
+.infoBlock {
+  text-align: start;
+  width: 306px;
+}
+.infoBlock label h3 {
+  margin: 34px 0px 24px 0;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+hr {
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+  margin-top: 35px;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  color: rgba(51, 51, 51, 0.459);
+}
+.price h3 {
+  font-size: 32px;
+  color: #333;
+}
+
+.amountInput {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 45px;
+}
+.amountInput input {
+  text-align: center;
+  font-weight: 700;
+  width: 57px;
+  border: 1px solid rgba(51, 51, 51, 0.134);
+}
+.button {
+  width: 120px;
+  margin-left: 30px;
+}
+
+.additivesList li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.additivesList li label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+}
+.additivesList li label h4 {
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.459);
+}
+.additivesList li label p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.additivesList li input {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
