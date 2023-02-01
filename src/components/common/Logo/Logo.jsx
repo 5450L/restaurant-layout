@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Logo() {
   return (
-    <NavLink to={"/"}>
+    <NavLink to={"/"} onClick={() => window.scrollTo(0, 0)}>
       <div className={logoStyles.logoContainer}>
         <img src={food} className={logoStyles.food} />
         <img src={fork} className={logoStyles.fork} />

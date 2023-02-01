@@ -4,6 +4,12 @@
   justify-content: center;
   column-gap: 134px;
 }
+@media (max-width: 940px) {
+  .bookDetails {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .imageBlock {
   width: 416px;
